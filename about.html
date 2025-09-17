@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - 8CSC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="8CSC Logo.png" alt="8CSC Logo" class="logo-img">
+                <div class="logo-text">
+                    <h2>8CSC</h2>
+                    <span>Eighth College Student Council</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link active">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="meetings.html" class="nav-link">Meetings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="funding.html" class="nav-link">Funding</a>
+                </li>
+                <li class="nav-item">
+                    <a href="initiatives.html" class="nav-link">Initiatives</a>
+                </li>
+                <li class="nav-item">
+                    <a href="get-involved.html" class="nav-link">Get Involved</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>About</h1>
+                <p>Meet the team representing Eighth College students at UC San Diego</p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <div class="content-section">
+                    <h2>Our Mission</h2>
+                    <p>The Eighth College Student Council (8CSC) serves as the official representative body for all students within Eighth College at UC San Diego. We are committed to fostering a supportive community that enhances the student experience through advocacy, programming, and student engagement.</p>
+                    
+                    <p>Our mission is to:</p>
+                    <ul>
+                        <li>Represent student interests and concerns to college administration</li>
+                        <li>Organize events and initiatives that build community</li>
+                        <li>Provide funding opportunities for student organizations</li>
+                        <li>Facilitate communication between students and college leadership</li>
+                        <li>Promote pro-Blackness and anti-racism within our community</li>
+                    </ul>
+                </div>
+
+                <div class="content-section">
+                    <h2>Council Members</h2>
+                    <div class="member-filters">
+                        <form class="filter-controls" id="committeeFilters" aria-label="Filter council members by committee">
+                            <label class="filter-chip">
+                                <input type="checkbox" name="committee" value="Finance" checked>
+                                <span>Finance</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="committee" value="Transparency and Archiving" checked>
+                                <span>Transparency and Archiving</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="committee" value="Accessibility and Student Needs" checked>
+                                <span>Accessibility and Student Needs</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="committee" value="Community Partnerships and Principles" checked>
+                                <span>Community Partnerships and Principles</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="committee" value="Student Outreach and Accountability" checked>
+                                <span>Student Accountability and Outreach</span>
+                            </label>
+                            <label class="filter-chip">
+                                <input type="checkbox" name="committee" value="Associated Students" checked>
+                                <span>Associated Students</span>
+                            </label>
+                            <button type="button" id="clearFilters" class="filter-clear">Clear all</button>
+                        </form>
+                    </div>
+                    <div class="member-grid" id="memberGrid">
+                        <div class="member-card" data-committee="Accessibility and Student Needs">
+                            <div class="member-name">Aditi Parthan</div>
+                            <div class="member-position">Academic Accommodations Advocate</div>
+                            <div class="member-details">Third-year | Economics</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Student Outreach and Accountability">
+                            <div class="member-name">Aidan Bui</div>
+                            <div class="member-position">CORE, SOA</div>
+                            <div class="member-details">Third-year | General Biology</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Student Outreach and Accountability">
+                            <div class="member-name">Anna Eliassen</div>
+                            <div class="member-position">SOA Representative</div>
+                            <div class="member-details">Third-year | General Biology</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Associated Students">
+                            <div class="member-name">Avanthika Ramasamy</div>
+                            <div class="member-position">AS Senator</div>
+                            <div class="member-details">Third-year | Poltiical Science</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Finance">
+                            <div class="member-name">Carina Yan</div>
+                            <div class="member-position">SFAC Representative</div>
+                            <div class="member-details">Third-year | -</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Transparency and Archiving">
+                            <div class="member-name">Clytie Huey</div>
+                            <div class="member-position">Graphic Designer</div>
+                            <div class="member-details">Second-year | Biochemistry</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Community Partnerships and Principles">
+                            <div class="member-name">Gabriela Martinez</div>
+                            <div class="member-position">CPP Representative</div>
+                            <div class="member-details">Second-year | Poltiical Science and Government</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Accessibility and Student Needs">
+                            <div class="member-name">Hailey Rowan</div>
+                            <div class="member-position">CORE, ASN</div>
+                            <div class="member-details">Third-year | Psychology</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Accessibility and Student Needs">
+                            <div class="member-name">Holly Menninger</div>
+                            <div class="member-position">Disability and Wellbeing Advocate</div>
+                            <div class="member-details">Third-year | Cognitive and Behavioral Neuroscience</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Associated Students">
+                            <div class="member-name">Jonah Kravitz</div>
+                            <div class="member-position">AS Senator</div>
+                            <div class="member-details">Third-year | Urban Studies and Planning</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Student Outreach and Accountability">
+                            <div class="member-name">Juliet Calderon</div>
+                            <div class="member-position">SOA Representative</div>
+                            <div class="member-details">Second-year | Human Biology</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Transparency and Archiving">
+                            <div class="member-name">Katherine Dinh</div>
+                            <div class="member-position">Website Designer</div>
+                            <div class="member-details">Second-year | -</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Community Partnerships and Principles">
+                            <div class="member-name">Kavya Suresh</div>
+                            <div class="member-position">CPP Representative</div>
+                            <div class="member-details">Second-year | Ethnic Studies and Critical Gender Studies</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Finance">
+                            <div class="member-name">Lucia Vera</div>
+                            <div class="member-position">SFAC Shadow</div>
+                            <div class="member-details">Second-year | International Studies and International Business</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Community Partnerships and Principles">
+                            <div class="member-name">Rachel Handa</div>
+                            <div class="member-position">CORE, CPP</div>
+                            <div class="member-details">Third-year | Sociology</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Transparency and Archiving">
+                            <div class="member-name">Robert Nasanbat</div>
+                            <div class="member-position">CORE, TAC</div>
+                            <div class="member-details">Third-year | -</div>
+                        </div>
+                        
+                        <div class="member-card" data-committee="Finance">
+                            <div class="member-name">Snigdha Podugu</div>
+                            <div class="member-position">CORE, Finance</div>
+                            <div class="member-details">Third-year | Data Science</div>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2>Our History</h2>
+                    <p>Eighth College, UC San Diego’s newest college, was established in 2023. That same year, the Eighth College Advisory Board was formed to lay the foundation for student governance and to guide the creation of the Eighth College Student Council, which was officially established in 2024.</p>
+                    
+                    <p>Since then, we have worked to strengthen student representation and build community. Some of our key milestones include:</p>
+                    <ul>
+                        <li>Establishing the Eighth College Student Activity Fee Referendum</li>
+                        <li>Advocating for the Triton U-PASS Fee Referendum</li>
+                        <li>Developing partnerships with other college councils across campus</li>
+                        <li>Advocating for improved student services and resources</li>
+                    </ul>
+                </div>                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer minimal-footer">
+        <div class="container">
+            <div class="minimal-footer-content">
+                <a class="social-pill instagram" href="https://www.instagram.com/eighthcollegecouncil/" target="_blank" rel="noopener" aria-label="Instagram @eighthcollegecouncil">
+                    <i class="fab fa-instagram"></i>
+                    <span>@eighthcollegecouncil</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
